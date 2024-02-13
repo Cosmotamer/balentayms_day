@@ -1,0 +1,166 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    overflow:hidden;
+    height: 100vh;
+
+
+}
+
+#mama_div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+
+}
+
+#front_page{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+
+}
+
+#image_container{
+
+    display: flex;
+    width: 30%;
+    height: 50%;
+    margin-bottom: 1%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+#image_container.show {
+    display: flex;
+    opacity: 1;
+}
+
+
+#sad_pic{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#happy_pic{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#happy_pic{
+
+    border-radius: 7px;
+
+
+}
+
+#question_container{
+
+    display: flex;
+
+}
+
+#yes_no_button_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    width:70%;
+    height: 7%;
+}
+
+.yes_no_but_style{
+
+    width: 20%;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+#yes_but, #no_but{
+
+    cursor: pointer;
+
+}
+
+#date_place{
+
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 85%;
+    border: 1px solid red;    
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+
+}
+
+
+
+#date_place.show {
+    display: flex;
+    opacity: 1;
+}
+
+
+#choices_container_1{
+
+    width: 90%;
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#choices_container_2{
+
+    width: 90%;
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+
+}
+
+.container_styles{
+
+    display: flex;
+    width: 19%;
+    height: 50%;
+    border: 1px solid red;
+    cursor: pointer;
+
+}
