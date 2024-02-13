@@ -42,7 +42,7 @@ body{
     width: 30%;
     height: 50%;
     margin-bottom: 1%;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 
 }
@@ -50,31 +50,109 @@ body{
 #image_container.show {
     display: flex;
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
+#nervous_gif{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+
+}
 
 #sad_pic{
 
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     
+}
+
+#sad_pic.show {
+    display: flex;
+    opacity: 1;
+
 }
 
 #happy_pic{
 
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
     
 }
 
-#happy_pic{
+#happy_pic.show {
+    display: flex;
+    opacity: 1;
 
-    border-radius: 7px;
+}
+
+#giving_flowers_container{
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
 
 
 }
+
+.giving_flowers{
+
+    width: 70%;
+    height: 100%;
+
+}
+
+#giving_flowers1{
+
+    display: none;
+
+}
+
+#giving_flowers_static{
+
+    display: flex;
+
+}
+
+#gif_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#take_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+}
+
+#take_button{
+
+    margin-top: 2%;
+    height: 100%;
+    cursor: pointer;
+
+
+}
+
+
 
 #question_container{
 
@@ -117,7 +195,6 @@ body{
     align-items: center;
     width: 80%;
     height: 85%;
-    border: 1px solid red;    
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 
@@ -135,7 +212,7 @@ body{
 #choices_container_1{
 
     width: 90%;
-    height: 47%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -143,24 +220,209 @@ body{
 
 }
 
-#choices_container_2{
+#name_of_place{
 
-    width: 90%;
-    height: 47%;
     display: flex;
+    position: absolute;
+    width: 80%;
+    height: 10%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1%;
+    margin-bottom: 14%;
+    bottom: 0;
+
 
 }
 
 .container_styles{
 
     display: flex;
-    width: 19%;
+    width: 32%;
     height: 50%;
-    border: 1px solid red;
+
+    cursor: pointer;
+
+}
+
+
+.name_of_place_style{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+
+
+}
+
+
+#sukoname{
+
+    margin-left: 66%;
+    margin-bottom: 2%;
+
+}
+
+#natalia_cafe{
+
+    margin-left: 34.5%;
+    margin-bottom: 2%;
+
+}
+
+#the_beanery{
+
+    margin-left: 4.5%;
+    margin-bottom: 2%;
+
+
+}
+
+#empty_modal_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure it's above other content */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#empty_modal {
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* White background for the modal */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+    width: 70%;
+    height: 70%;
+    margin-bottom: 3%;
+    overflow: auto; /* Optional: Add scrollbar if content exceeds modal height */
+}
+
+#the_beanery_menu{
+
+    display: none;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#click_mo_ko{
+
+    height: 10%;
+    margin-top: 2%;
+    cursor: pointer;
+
+}
+
+#cafe_natalia_menu{
+
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+#click_mo_ko_2{
+
+    height: 10%;
+    cursor: pointer;
+
+}
+
+#click_mo_ko_3{
+
+    height: 10%;
+    cursor: pointer;
+
+}
+
+#natalia_close{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 1%;
+    height: 3%;
+    margin-right: 70%;
+    cursor: pointer;
+
+
+}
+
+#beanery_close{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 1%;
+    height: 3%;
+    margin-right: 70%;
+    margin-bottom: 33%;
+    cursor: pointer;
+
+
+}
+
+
+#sukoname_menu{
+
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+
+.sukoname_style{
+
+    display: flex;
+    width: 100%;
+
+}
+
+
+#sukoname_close{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 1%;
+    height: 3%;
+    margin-right: 70%;
     cursor: pointer;
 
 }
